@@ -31,11 +31,10 @@ public class Portero extends Futbolista {
         if (o instanceof Portero) {
             Portero otroPortero = (Portero) o;
             return Math.abs(this.golesRecibidos - otroPortero.golesRecibidos);
-        }
-        
-        else if (o instanceof Futbolista) {
+        } else if (o instanceof Futbolista) {
             Futbolista otroFutbolista = (Futbolista) o;
             return Math.abs(this.getEdad() - otroFutbolista.getEdad());
         }
+        return 0;
     }
 }
