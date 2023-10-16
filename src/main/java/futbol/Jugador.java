@@ -20,16 +20,6 @@ public class Jugador extends Futbolista {
     public boolean jugarConLasManos(){
     	return false;
     }
-    
-    @Override
-    public int compareTo(Futbolista otroFutbolista) {
-        if (otroFutbolista instanceof Jugador) {
-            Jugador otroJugador = (Jugador) otroFutbolista;
-            return Math.abs(this.getEdad() - otroJugador.getEdad());
-        }
-        
-        return super.compareTo(otroFutbolista);
-    }
 
     @Override
     public int compareTo(Object o) {
