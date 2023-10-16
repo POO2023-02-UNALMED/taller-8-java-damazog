@@ -50,4 +50,3 @@ public abstract class Futbolista implements Comparable<Futbolista> {
     public int compareTo(Futbolista otroFutbolista) {
         return Math.abs(this.edad - otroFutbolista.getEdad());
     }
-}}
