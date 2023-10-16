@@ -1,4 +1,4 @@
-package main.java.futbol;
+package futbol;
 
 public abstract class Futbolista implements Comparable<Futbolista> {
     private String nombre;
