@@ -31,4 +31,21 @@ public class Portero extends Futbolista {
             Portero otroPortero = (Portero) o;
             return Math.abs(this.golesRecibidos - otroPortero.golesRecibidos);
     }
+
+	public short getGolesRecibidos() {
+		return golesRecibidos;
+	}
+
+	public void setGolesRecibidos(short golesRecibidos) {
+		this.golesRecibidos = golesRecibidos;
+	}
+
+	public byte getDorsal() {
+		return dorsal;
+	}
+
+	public void setDorsal(byte dorsal) {
+		this.dorsal = dorsal;
+	}
+    
 }
