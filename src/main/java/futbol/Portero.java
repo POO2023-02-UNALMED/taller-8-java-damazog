@@ -26,15 +26,9 @@ public class Portero extends Futbolista {
         return "El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de " + getPosicion() + " con el dorsal " + dorsal + ". Le han marcado " + golesRecibidos;
     }
 
-    @Override
+    
     public int compareTo(Object o) {
-        if (o instanceof Portero) {
             Portero otroPortero = (Portero) o;
             return Math.abs(this.golesRecibidos - otroPortero.golesRecibidos);
-        } else if (o instanceof Futbolista) {
-            Futbolista otroFutbolista = (Futbolista) o;
-            return Math.abs(this.getEdad() - otroFutbolista.getEdad());
-        }
-        return 0;
     }
 }
